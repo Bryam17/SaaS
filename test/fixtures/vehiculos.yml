@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  ruedas: 1
+  motor: MyString
+  cant_pasajeros: 1
+  placa: MyString
+  anyo: 2022-10-18
+  precio: 9.99
+  observacion: MyText
+
+two:
+  ruedas: 1
+  motor: MyString
+  cant_pasajeros: 1
+  placa: MyString
+  anyo: 2022-10-18
+  precio: 9.99
+  observacion: MyText
