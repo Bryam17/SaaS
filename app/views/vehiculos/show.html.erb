@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Ruedas:</strong>
+  <%= @vehiculo.ruedas %>
+</p>
+
+<p>
+  <strong>Motor:</strong>
+  <%= @vehiculo.motor %>
+</p>
+
+<p>
+  <strong>Cant pasajeros:</strong>
+  <%= @vehiculo.cant_pasajeros %>
+</p>
+
+<p>
+  <strong>Placa:</strong>
+  <%= @vehiculo.placa %>
+</p>
+
+<p>
+  <strong>Anyo:</strong>
+  <%= @vehiculo.anyo %>
+</p>
+
+<p>
+  <strong>Precio:</strong>
+  <%= @vehiculo.precio %>
+</p>
+
+<p>
+  <strong>Observacion:</strong>
+  <%= @vehiculo.observacion %>
+</p>
+
+<%= link_to 'Edit', edit_vehiculo_path(@vehiculo) %> |
+<%= link_to 'Back', vehiculos_path %>

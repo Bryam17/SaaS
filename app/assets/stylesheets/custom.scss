@@ -1,0 +1,45 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+/* Contenido general */
+
+body{
+    padding-top: 60px;
+}
+
+section{
+    overflow: auto;
+}
+
+textarea{
+    resize: vertical;
+}
+
+.center{
+    text-align: center;
+}
+
+.center h1{
+    margin-bottom: 10px;
+}
+
+/*contenido del header*/
+
+#logo{
+    float: left;
+    margin-right: 10px;
+    font-size: 1.7em;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    padding-top: 9px;
+    font-weight: bold;
+}
+
+/*Bryam Benito Vargas Calderon
+  17-02058-0
+  10/10/2022*/
+.containerf{
+    display: flex;
+    justify-content: center;
+}

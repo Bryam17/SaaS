@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= full_title(yield(:title)) %></title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+  <header class="navbar navbar-fixed-top navbar-inverse">
+  <div class="container">
+    <%= link_to "proyecto", root_path, id: "logo"%>
+      <!--Bryam Benito Vargas Calderon
+      17-02058-0
+      10/10/2022-->
+    <%= link_to image_tag("logos/code.png", width: '32px', id: "logo"), root_path %>
+    <nav>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          <%= link_to "Bienvenido", bienvenido_index_path %>
+        </li>
+        <li>
+          <%= link_to "Ejemplo", ejemplo_hola_path %>
+        </li>
+        <li>
+          <%= link_to "Prueba", hola_index_path %>
+        </li>
+        <li>
+          <%= link_to "Adios", adios_index_path %>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  </header>
+
+  <div class="container">
+    <%= yield %>
+  </div>
+  </body>
+  <!-- Agregar un footer con el autor del proyecto y direccion de Email-->
+  <footer class="footer navbar navbar-fixed-bottom navbar-default">
+  <div class="containerf">
+    <nav>
+      <ul class="nav navbar-nav navbar">
+        <li>
+          <a>© 2022 Copyright: Bryam Benito Vargas Calderon</a>
+        </li>
+         <li>
+          <a>bryamvargas64@gmail.com</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  </footer>
+</html>

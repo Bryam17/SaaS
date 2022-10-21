@@ -1,0 +1,52 @@
+<%= form_with(model: vehiculo, local: true) do |form| %>
+  <% if vehiculo.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(vehiculo.errors.count, "error") %> prohibited this vehiculo from being saved:</h2>
+
+      <ul>
+      <% vehiculo.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :ruedas %>
+    <%= form.number_field :ruedas, id: :vehiculo_ruedas %>
+  </div>
+
+  <div class="field">
+    <%= form.label :motor %>
+    <%= form.text_field :motor, id: :vehiculo_motor %>
+  </div>
+
+  <div class="field">
+    <%= form.label :cant_pasajeros %>
+    <%= form.number_field :cant_pasajeros, id: :vehiculo_cant_pasajeros %>
+  </div>
+
+  <div class="field">
+    <%= form.label :placa %>
+    <%= form.text_field :placa, id: :vehiculo_placa %>
+  </div>
+
+  <div class="field">
+    <%= form.label :anyo %>
+    <%= form.date_select :anyo, id: :vehiculo_anyo %>
+  </div>
+
+  <div class="field">
+    <%= form.label :precio %>
+    <%= form.text_field :precio, id: :vehiculo_precio %>
+  </div>
+
+  <div class="field">
+    <%= form.label :observacion %>
+    <%= form.text_area :observacion, id: :vehiculo_observacion %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
